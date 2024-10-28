@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const { type } = require("os");
 const { stringify } = require("querystring");
-mongoose.connect("monogdb://127.0.0.1:27017/scatch"):
+mongoose.connect("monogdb://127.0.0.1:27017/scatch")
 
 const userSchema = mongoose.Schema({
     fullname : String,
