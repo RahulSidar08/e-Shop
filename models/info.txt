@@ -1,0 +1,22 @@
+user models data
+
+full name - string 
+email string 
+password string 
+cart array 
+isAdmin boolean
+orders array
+contact number 
+picture database 
+
+
+product model data 
+
+product 
+image 
+name 
+price 
+discount 
+bgcolor 
+panelcolor 
+tectcolor 
