@@ -2,8 +2,7 @@ const express = require("express");
 const router = express.Router();
 const ownerModel = require("../models/owners-model");
 
-console.log(process.env.NODE_ENV);
-// setx NODE_ENV "development"
+// console.log(process.env.NODE_ENV);
 
 if (process.env.NODE_ENV === "development") {
   router.post("/create", async function (req, res) {
