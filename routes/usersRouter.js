@@ -5,7 +5,7 @@ const userModel = require("../models/user-model")
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const {generateToken} = require("../utils/generateToken")
-const {registerUser} = require("../controllers/authController.js")
+const {registerUser, loginUSer,lg} = require("../controllers/authController.js")
 
 
 
@@ -14,5 +14,8 @@ router.get("/", function (req, res) {
 });
 
 router.post("/register", registerUser)
+router.post("/login",loginUSer);
+router.use("/logout",lg)
+
 
 module.exports = router;
